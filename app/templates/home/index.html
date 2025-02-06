@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Home - ManuNunez{% endblock %}
+
+{% block content %}
+<div class="flex flex-col items-center justify-center min-h-[80vh] text-center">
+    <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Profile Picture" class="w-32 h-32 rounded-full shadow-md mb-4">
+    
+    <h1 class="text-3xl font-bold text-gray-800">Hello, I’m Manuel Núñez</h1>
+    
+    <p class="text-gray-600 mt-2 max-w-lg">
+        Passionate about <strong>mathematics and technology</strong>.  
+        I’ve dedicated my career to teaching <strong>math olympiads</strong> and software development.  
+        I work with <strong>Flask, PostgreSQL, Tailwind, and Python</strong>, and have developed <strong>OlimpiApp</strong>, a platform to manage competitions.  
+        I also enjoy optimizing processes with Python scripts.
+    </p>
+
+    <div class="mt-6 space-x-4">
+        <a href="{{ url_for('contact.contact') }}" class="bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600">
+            Contact
+        </a>
+    </div>
+
+    <p class="text-gray-600 mt-6 italic">
+        "Quick Thinking, Agile Solutions"
+    </p>
+</div>
+{% endblock %}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An impressive and flawless site template that includes various UI elements and countless features, attractive ready-made blocks and rich pages, basically everything you need to create a unique and professional website.">
+    <meta name="keywords" content="Tailwind CSS, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
+    <meta name="author" content="ManuNunez">
+    <title>{% block title %}ManuNunez{% endblock %}</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/fonts/unicons/unicons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/output.css') }}">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #374151; /* Gray-700 for better contrast */
+            background-color: #ffffff;
+        }
+        .content {
+            flex: 1 0 auto;
+            margin-bottom: 4rem; /* Espacio para el footer */
+        }
+        #menu {
+            transition: max-height 0.3s ease-out;
+        }
+        #menu.open {
+            display: block;
+            max-height: 300px; /* Ajusta según el contenido */
+        }
+        footer {
+            background-color: #f3f4f6; /* Gray-200 */
+            color: #4b5563; /* Gray-600 */
+        }
+        footer a {
+            color: #2563eb; /* Azul más oscuro para enlaces */
+        }
+        footer a:hover {
+            color: #1e40af; /* Azul aún más oscuro en hover */
+        }
+    </style>
+</head>
+<body class="onepage">
+    <nav class="bg-gray-200 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-primary text-xl font-bold">ManuNunez</a>
+            <!-- Botón del menú hamburguesa (visible solo en pantallas pequeñas) -->
+            <button id="menu-toggle" class="text-gray-700 focus:outline-none md:hidden">
+                <i class="uil uil-bars text-2xl"></i>
+            </button>
+            <!-- Menú en pantallas grandes -->
+            <ul id="menu" class="hidden absolute top-16 left-0 w-full bg-gray-200 shadow-md md:flex md:static md:w-auto md:space-x-4">  
+                <li><a href="/projects" class="block py-2 px-4 text-gray-700 hover:text-primary">Projects</a></li>
+                <li><a href="/about" class="block py-2 px-4 text-gray-700 hover:text-primary">About Me</a></li>
+                <li><a href="/contact" class="block py-2 px-4 text-gray-700 hover:text-primary">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    
+
+    
+
+    <main class="container mx-auto p-6 content">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="bg-gray-200 text-gray-600">
+        <div class="container mx-auto py-16 xl:py-20 lg:py-20 md:py-20 px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
+                <!-- Primera columna -->
+                <div class="md:w-1/2">
+                    <p class="mb-4">© 2024 ManuNunez. All rights reserved.</p>
+                    <nav class="flex justify-center md:justify-start space-x-4">
+                        <a href="https://twitter.com/yourprofile" target="_blank" class="uil uil-twitter-alt text-gray-600 hover:text-blue-600"></a>
+                        <a href="https://www.instagram.com/yourprofile" target="_blank" class="uil uil-instagram text-gray-600 hover:text-pink-600"></a>
+                        <a href="https://github.com/yourprofile" target="_blank" class="uil uil-github-alt text-gray-600 hover:text-black"></a>
+                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="uil uil-linkedin text-gray-600 hover:text-blue-800"></a>
+                    </nav>
+                </div>
+    
+                <!-- Segunda columna: Información breve -->
+                <div class="md:w-1/2">
+                    <h4 class="widget-title text-gray-800 mb-3">About Me</h4>
+                    <p class="text-gray-600 mb-4">
+                        I am passionate about <strong>mathematics</strong> and <strong>technology</strong>, and I dedicate my time to teaching math olympiads and developing software solutions. My mission is to create impactful tools and contribute to the community by helping others improve their skills and knowledge.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        If you’re interested in collaborating, feel free to reach out to me through the contact section. Let’s connect and make things happen!
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Cuarta columna: Declaración de misión o filosofía -->
+            <div class="mt-8 text-center">
+                <p class="text-gray-600 italic">"Quick Thinking, Agile Solutions" – A motto that drives my approach to problem-solving, continuous learning, and delivering solutions that adapt to changing needs.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    </script>
+    
+</body>
+</html>

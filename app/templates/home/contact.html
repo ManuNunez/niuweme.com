@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - ManuNunez{% endblock %}
+
+{% block content %}
+<div class="flex justify-center items-center min-h-[80vh]">
+    <div class="bg-white shadow-lg rounded-xl p-8 max-w-md w-full text-center">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+        <p class="text-gray-600 mb-6">Connect with me through my social networks!</p>
+        
+        <div class="space-y-6">
+            <a href="https://x.com/_Niuweme" target="_blank" class="flex items-center space-x-4 bg-blue-100 p-4 rounded-lg hover:bg-blue-200">
+                <i class="uil uil-twitter-alt text-blue-500 text-3xl"></i>
+                <div class="text-left">
+                    <p class="text-gray-800 font-medium">Twitter</p>
+                    <p class="text-gray-500">@_Niuweme</p>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/manununez_31/" target="_blank" class="flex items-center space-x-4 bg-pink-100 p-4 rounded-lg hover:bg-pink-200">
+                <i class="uil uil-instagram text-pink-500 text-3xl"></i>
+                <div class="text-left">
+                    <p class="text-gray-800 font-medium">Instagram</p>
+                    <p class="text-gray-500">@manununez_31</p>
+                </div>
+            </a>
+
+            <a href="https://github.com/ManuNunez" target="_blank" class="flex items-center space-x-4 bg-gray-100 p-4 rounded-lg hover:bg-gray-200">
+                <i class="uil uil-github-alt text-gray-800 text-3xl"></i>
+                <div class="text-left">
+                    <p class="text-gray-800 font-medium">GitHub</p>
+                    <p class="text-gray-500">@ManuNunez</p>
+                </div>
+            </a>
+
+            <a href="mailto:niuweme.nunez@gmail.com" class="flex items-center space-x-4 bg-red-100 p-4 rounded-lg hover:bg-red-200">
+                <i class="uil uil-envelope text-red-500 text-3xl"></i>
+                <div class="text-left">
+                    <p class="text-gray-800 font-medium">Email</p>
+                    <p class="text-gray-500">niuweme.nunez@gmail.com</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

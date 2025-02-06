@@ -1,0 +1,12 @@
+{
+  "name": "personal_portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "build-css": "tailwindcss build app/static/css/styles.css -o app/static/css/tailwind.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^2.2.19",
+    "postcss": "^8.3.11",
+    "autoprefixer": "^10.3.7"
+  }
+}
