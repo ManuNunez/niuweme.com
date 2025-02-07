@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An impressive and flawless site template that includes various UI elements and countless features, attractive ready-made blocks and rich pages, basically everything you need to create a unique and professional website.">
-    <meta name="keywords" content="Tailwind CSS, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
+    <meta name="description" content="Portfolio of Manu Nunez, a software developer specializing in Flask, PostgreSQL, and Tailwind CSS. Explore my projects, including OlimpiApp and board game apps. Let's connect!">
+    <meta name="keywords" content="Manuel Nunez, software developer, Flask, PostgreSQL, Tailwind CSS, OlimpiApp, web development, board game apps, Python, backend, full stack developer">
     <meta name="author" content="ManuNunez">
     <title>{% block title %}ManuNunez{% endblock %}</title>
     <!-- google fonts -->
@@ -79,37 +79,36 @@
     </main>
 
     <footer class="bg-gray-200 text-gray-600">
-        <div class="container mx-auto py-16 xl:py-20 lg:py-20 md:py-20 px-4">
+        <div class="container mx-auto py-12 xl:py-16 lg:py-16 md:py-16 px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
-                <!-- Primera columna -->
+                
+                <!-- Columna 1: Derechos de autor y redes sociales -->
                 <div class="md:w-1/2">
                     <p class="mb-4">© 2024 ManuNunez. All rights reserved.</p>
-                    <nav class="flex justify-center md:justify-start space-x-4">
-                        <a href="https://twitter.com/yourprofile" target="_blank" class="uil uil-twitter-alt text-gray-600 hover:text-blue-600"></a>
-                        <a href="https://www.instagram.com/yourprofile" target="_blank" class="uil uil-instagram text-gray-600 hover:text-pink-600"></a>
-                        <a href="https://github.com/yourprofile" target="_blank" class="uil uil-github-alt text-gray-600 hover:text-black"></a>
-                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="uil uil-linkedin text-gray-600 hover:text-blue-800"></a>
+                    <nav class="flex justify-center md:justify-start space-x-6">
+                        <a href="https://x.com/_Niuweme" target="_blank" class="uil uil-twitter-alt text-3xl text-gray-600 hover:text-blue-600"></a>
+                        <a href="https://www.instagram.com/manununez_31/" target="_blank" class="uil uil-instagram text-3xl text-gray-600 hover:text-pink-600"></a>
+                        <a href="https://github.com/ManuNunez" target="_blank" class="uil uil-github-alt text-3xl text-gray-600 hover:text-black"></a>
+                        <a href="https://www.linkedin.com/in/manuel-niuweme-n%C3%BA%C3%B1ez-murillo-b824a7298/" target="_blank" class="uil uil-linkedin text-3xl text-gray-600 hover:text-blue-800"></a>
                     </nav>
                 </div>
     
-                <!-- Segunda columna: Información breve -->
-                <div class="md:w-1/2">
-                    <h4 class="widget-title text-gray-800 mb-3">About Me</h4>
-                    <p class="text-gray-600 mb-4">
-                        I am passionate about <strong>mathematics</strong> and <strong>technology</strong>, and I dedicate my time to teaching math olympiads and developing software solutions. My mission is to create impactful tools and contribute to the community by helping others improve their skills and knowledge.
-                    </p>
-                    <p class="text-gray-600 mb-4">
-                        If you’re interested in collaborating, feel free to reach out to me through the contact section. Let’s connect and make things happen!
-                    </p>
+                <!-- Columna 2: Formulario de Contacto -->
+                <div class="md:w-1/2 flex flex-col justify-center">
+                    <h4 class="text-gray-800 font-semibold mb-3">Contact Me</h4>
+                    <form action="mailto:niuweme.nunez@gmial.com" method="POST" enctype="text/plain" class="flex flex-col space-y-3">
+                        <input type="email" name="email" placeholder="Your email" required class="px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <textarea name="message" placeholder="Your message" required class="px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Send</button>
+                    </form>
                 </div>
-            </div>
     
-            <!-- Cuarta columna: Declaración de misión o filosofía -->
-            <div class="mt-8 text-center">
-                <p class="text-gray-600 italic">"Quick Thinking, Agile Solutions" – A motto that drives my approach to problem-solving, continuous learning, and delivering solutions that adapt to changing needs.</p>
             </div>
         </div>
     </footer>
+    
+    
+    
     
     
     
